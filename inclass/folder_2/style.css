@@ -1,31 +1,40 @@
+/* id   # */
+/* class  . */
+/* tag kullanirsak hicbirsey basina yazmiyoruz */
 
-table, th, td, caption{
+
+table, caption, th, td{
     border: 1px solid;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.time{
-    text-align: center;
 }
 
 table{
     width: 55%;
 }
 
-#button_div{
-    margin-top: 10px;
-    width: 55%;
+.time{
     text-align: center;
 }
 
-#button_girls{
-    background-color: pink;
-    border: 2px solid pink;
+#button-div{
+    /* background-color: red; */
+    width: 55%;
+    text-align: center;
+    margin-top: 15px;
 }
 
-#button_boys {
+#button-boys{
     background-color: cornflowerblue;
     border: 2px solid cornflowerblue;
-    margin-left: 20px;
+    border-radius: 5px 0;
+    /* border-radius: 5px 0 5px 0; */
 }
+
+#button-girls {
+    background-color: pink;
+    border: 2px solid rgb(250, 109, 132);
+    border-radius: 5px 0;
+    /* border-radius: 5px 0 5px 0; */
+}
+
