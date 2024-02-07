@@ -3,7 +3,7 @@
 /* tag kullanirsak hicbirsey basina yazmiyoruz */
 
 
-table, caption, th, td{
+/* table, caption, th, td{
     border: 1px solid;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +18,7 @@ table{
 }
 
 #button-div{
-    /* background-color: red; */
+   
     width: 55%;
     text-align: center;
     margin-top: 15px;
@@ -28,13 +28,13 @@ table{
     background-color: cornflowerblue;
     border: 2px solid cornflowerblue;
     border-radius: 5px 0;
-    /* border-radius: 5px 0 5px 0; */
+   
 }
 
 #button-girls {
     background-color: pink;
     border: 2px solid rgb(250, 109, 132);
     border-radius: 5px 0;
-    /* border-radius: 5px 0 5px 0; */
-}
+    
+} */
 
