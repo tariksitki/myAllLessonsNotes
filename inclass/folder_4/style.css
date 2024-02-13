@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 #main_container{
-    background-color: bisque;
+    /* background-color: bisque; */
     /* display: flex; */
     /* flex-direction: row; */
     /* flex-direction: column; */
@@ -13,7 +13,7 @@ body{
     /* flex-direction: row-reverse; */
     /* flex-wrap: wrap; */
     /* flex-wrap: nowrap; */
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: wrap;
     flex-direction: column; */
     /* flex-flow: row wrap; */
@@ -26,13 +26,13 @@ body{
     /* justify-content: flex-start; */
     
 }
-.div{
+/* .div{
     height: 200px;
     background-color: blueviolet;
     width: 20%;
     border: 1px solid;
     color: white;
-}
+} */
 /* #div_2 {
     height: 200px;
     background-color: brown;
@@ -44,3 +44,96 @@ body{
     width: 30%;
     
 } */
+
+
+
+
+#main_container{
+    background-color: bisque;
+    height: 400px;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner_container{
+    /* background-color: red; */
+    width: 15%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div{
+    background-color: blue;
+    width: 30px;
+    height: 200px;
+    color: white;
+    border: 1px solid;
+    /* font-size: 50px; */
+}
+
+#middle_div{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+}
+
+button {
+    /* width: 120px; */
+    /* margin-top: 30px; */
+    /* padding: 30px; */
+
+    /* font-size: 30px; */
+
+    /* background-color: brown;
+    color: white;
+    border-radius: 0 10px 0 10px; */
+
+}
+
+.button_div{
+    /* background-color: red; */
+}
+
+/* #div_2{
+    display: flex;
+    justify-content: center;
+}
+
+#div_3{
+    display: flex;
+    justify-content: end;
+} */
+
+
+
+#navbar{
+    /* background-color: red; */
+    height: 100px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar_inner_div{
+    /* background-color: blueviolet; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+button{
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
