@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="section_left">
+      <div id="section_left_top">
+        <div class="section_left_top_row">
+          <div class="icon_div" style="width: 30%">icon</div>
+          <div class="title_div">anasayfa</div>
+        </div>
+
+        <div class="section_left_top_row">
+          <div class="icon_div" style="width: 30%">icon</div>
+          <div class="title_div" >shorts</div>
+        </div>
+
+        <div class="section_left_top_row">
+          <div class="icon_div" style="width: 30%">icon</div>
+          <div class="title_div">abonelikler</div>
+        </div>
+      </div>
+
+      <div id="section_left_middle">div 2</div>
+
+      <div id="section_left_down">div 3</div>
+    </section>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #section_left {
+        width: 15vw;
+        height: 80vh;
+        background-color: yellow;
+      }
+
+      #section_left_top{
+        height: 28%;
+      }
+
+      .section_left_top_row{
+        height: 30%;
+        background-color: red;
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid gray;
+      }
+
+      .icon_div {
+        border-right: 1px solid gray;
+        width: 30%;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title_div{
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </body>
+</html>
