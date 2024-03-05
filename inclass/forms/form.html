@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+
+    <form action="result.html" method="get" target="_blank" style="border: 1px solid;">
+      <label for="name_input">Name</label> <br />
+      <input 
+      type="text" 
+      id="name_input" 
+      name="name"
+      placeholder="Please enter your name" 
+      required/>
+
+      <br />
+      <br />
+
+      <label for="surname_input">Surname</label> <br />
+      <input
+        type="text"
+        id="surname_input"
+        name="surname"
+        placeholder="Please enter your surname"
+        required
+      />
+
+      <br /><br />
+
+      <label for="input_email">Email</label> <br />
+      <input
+        type="email"
+        name="email"
+        id="input_email"
+        placeholder="Please enter your email"
+      />
+
+      <br /><br />
+
+      <label for="input_password">Password</label><br />
+      <input
+        type="password"
+        name="password"
+        id="input_password"
+        placeholder="Please enter your password"
+      />
+
+      <br><br>
+
+      <label for="input_date">Birthday</label> <br>
+      <input type="date" name="birthday" id="input_date" >
+
+      <br><br>
+
+      <label for="input_color">Please select best color</label> <br>
+      <input type="color" name="color" id="input_color">
+
+      <br><br>
+
+      <p>Cinsiyet</p>
+      <label for="input_man">Man</label>
+      <input type="radio" name="cinsiyet" id="input_man" value="man">
+
+      <label for="input_woman">Woman</label>
+      <input type="radio" name="cinsiyet" id="input_woman" value="woman">
+
+      <br><br>
+
+      <input type="checkbox" name="checkbox" id="input_checkbox" required>
+      <label for="input_checkbox">Kullanici Sözlesmesini Okudum Onayliyorum</label>
+       
+      <br><br>
+
+
+      <input type="submit" value="Send">
+
+    </form>
+  </body>
+</html>
