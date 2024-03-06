@@ -7,15 +7,24 @@
   </head>
   <body>
 
-    <form action="result.html" method="get" target="_blank" style="border: 1px solid;">
+    <form action="result.html" 
+    target="_blank" 
+    style="border: 1px solid;"
+    autocomplete="off"
+    novalidate
+    >
       <label for="name_input">Name</label> <br />
       <input 
       type="text" 
       id="name_input" 
       name="name"
       placeholder="Please enter your name" 
-      required/>
+      required
+      autocomplete="off"
+     
+      />
 
+      
       <br />
       <br />
 
@@ -62,21 +71,49 @@
 
       <p>Cinsiyet</p>
       <label for="input_man">Man</label>
-      <input type="radio" name="cinsiyet" id="input_man" value="man">
+      <input 
+      type="radio" 
+      name="cinsiyet" 
+      id="input_man" 
+      value="man"
+      checked
+      >
 
       <label for="input_woman">Woman</label>
       <input type="radio" name="cinsiyet" id="input_woman" value="woman">
 
       <br><br>
 
-      <input type="checkbox" name="checkbox" id="input_checkbox" required>
+      <input 
+      type="checkbox" 
+      name="checkbox" 
+      id="input_checkbox" 
+      required
+      checked
+      >
       <label for="input_checkbox">Kullanici Sözlesmesini Okudum Onayliyorum</label>
        
       <br><br>
 
+      <label for="cars">Please select an auto</label> <br>
+      <select name="cars" id="cars" size="4">
+        <option value=""></option>
+        <option value="Mercedes" selected>1Mercedes</option>
+        <option value="Audi">2Audi</option>
+        <option value="BMW">3BMW</option>
+        <option value="TOFAS">4TOFAS</option>
+        <option value="Volvo">5Volvo</option>
+        <option value="Mercedes" selected>6Mercedes</option>
+        <option value="Audi">7Audi</option>
+        <option value="BMW">8BMW</option>
+        <option value="TOFAS">9TOFAS</option>
+        <option value="Volvo">10Volvo</option>
+      </select>
 
+      <br><br>
       <input type="submit" value="Send">
 
     </form>
+
   </body>
 </html>
