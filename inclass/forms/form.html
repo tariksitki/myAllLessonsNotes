@@ -11,6 +11,7 @@
     target="_blank" 
     style="border: 1px solid;"
     autocomplete="off"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)"
     >
       <label for="name_input">Name</label> <br />
       <input 
@@ -95,7 +96,7 @@
       <br><br>
 
       <label for="cars">Please select an auto</label> <br>
-      <select name="cars" id="cars" size="5" multiple>
+      <select name="cars" id="cars">
         <option 
         value="" 
         style="font-weight: bolder; text-align: center;" 
@@ -138,7 +139,7 @@
       <br><br>
 
       <fieldset>
-        <legend>Personal Information</legend>
+        <legend style="margin: auto;">Personal Information</legend>
 
         <br><br><br>
         <label for="first_name">First Name</label> <br>
@@ -173,6 +174,70 @@
 
       <br><br><br>
 
+
+      <input 
+      type="text" 
+      list="datalist" 
+      name="datalist" 
+      placeholder="Please enter a country">
+
+      <datalist id="datalist">
+        <option value="Germany">Germany</option>
+        <option value="Italy">Italy</option>
+        <option value="Poland">Poland</option>
+        <option value="France">France</option>
+        <option value="Turkey">Turkey</option>
+      </datalist>
+
+      
+      <br><br><br>
+
+      0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+
+  <br></br> <br>
+
+
+  <label for="cars_2">Cars 2</label>  <br>
+
+  <select name="cars_2" id="cars_2">
+    <optgroup label="Sedan" style="background-color: chocolate;">
+      <option value="" style="background-color: white;">Mercedes E Klasse</option>
+      <option value="" style="background-color: white;">BMW 3.20D</option>
+      <option value="" style="background-color: white;">AUDI A4</option>
+      <option value="" style="background-color: white;">VW Passat</option>
+      <option value="" style="background-color: white;">Volvo S60</option>
+    </optgroup>
+
+
+    <optgroup label="Hatcback"> 
+      <option value="">Mercedes A Klasse</option>
+      <option value="">BMW 1.20D</option>
+      <option value="">AUDI A3</option>
+      <option value="">VW Golf</option>
+      <option value="">Volvo V40</option>
+    </optgroup>
+
+    <optgroup label="Minibus"> 
+      <option value="">Mercedes Vito</option>
+      <option value="">BMW X7</option>
+      <option value="">AUDI Q7</option>
+      <option value="">VW Transporter</option>
+      <option value="">Volvo Minibus</option>
+    </optgroup>
+  </select>
+
+      
+  
+      <br><br><br>
+      
+      <input type="reset" value="Reset">
 
       <br><br>
       <input type="submit" value="Send">
