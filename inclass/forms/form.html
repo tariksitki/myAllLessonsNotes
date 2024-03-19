@@ -384,6 +384,19 @@
         mylabel.innerText = "Göster";
       }
     }
+
+    mylabel.onclick = function() {
+      if (password.type == "password") {
+        password.type = "text"
+        eye.className = "fa fa-eye-slash";
+        mylabel.innerText = "Gizle";
+
+      } else {
+        password.type = "password";
+        eye.className = "fa fa-eye";
+        mylabel.innerText = "Göster";
+      }
+    }
   </script>
 
   
