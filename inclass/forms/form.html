@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -34,8 +36,11 @@
         id="surname_input"
         name="surname"
         placeholder="Please enter your surname"
-       
+
       />
+
+      <br>
+      <input type="password" name="" id="" aria-hidden="false">
 
       <br /><br />
 
@@ -330,6 +335,49 @@
  
 
   <br><br><br>
+
+  <label for="mypassword">Enter Password</label>
+  <div style="display: flex; 
+  align-items: center; 
+  border: 1px solid; 
+  width: 250px;
+  border-radius: 5px;">
+  <input 
+  type="password" 
+  name="mypassword" 
+  id="mypassword" 
+  style="border: none; outline: none;"
+  >
+    <label id="mylabel" for="" style="margin-right: 10px;">Göster</label>
+    <i id="eye" class="fa fa-eye" style="font-size:24px"></i>
+  </input>
+
+  <!-- <input type="checkbox" name="mycheckbox" id="mycheckbox">
+  <label for="mycheckbox" id="mylabel">Passwordu göster</label> -->
+
+  
+  <!-- <i class="fa fa-eye-slash" style="font-size:36px"></i> -->
+  </div>
+
+  <script>
+    var password = document.getElementById("mypassword");
+    var checkbox = document.getElementById("mycheckbox");
+    var eye = document.getElementById("eye");
+    var mylabel = document.getElementById("mylabel");
+
+    eye.onclick = function() {
+      if (password.type == "password") {
+        password.type = "text"
+        eye.className = "fa fa-eye-slash";
+        mylabel.innerText = "Gizle";
+
+      } else {
+        password.type = "password";
+        eye.className = "fa fa-eye";
+        mylabel.innerText = "Göster";
+      }
+    }
+  </script>
 
   
   
