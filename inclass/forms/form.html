@@ -474,5 +474,53 @@
 
     </form>
 
+
+    <br><br><br><br><br>
+
+    <!-- name_input -->
+
+    <!-- <a href="#name_input"> -->
+      <p id="sedat" class="piyade">Deneme</p>
+    <!-- </a> -->
+    
+    <br>
+
+    <style>
+      #sedat {
+        /* background-color: red; */
+      }
+
+      .piyade {
+        background-color: green;
+      }
+
+      #sedat:hover{
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      var sedat = document.getElementById("sedat");
+
+      sedat.onclick = function() {
+        // sedat.innerHTML = "hasan";
+        sedat.innerText = "Hasan Kampo";
+        sedat.style.backgroundColor = "yellow";
+      }
+
+      sedat.onmouseenter = function() {
+        sedat.style.cursor = "pointer";
+        sedat.style.backgroundColor = "red";
+      }
+
+      sedat.onmouseout = function() {
+        sedat.style.cursor = "auto";
+        sedat.style.backgroundColor = "green";
+      }
+
+      
+    </script>
+
+
   </body>
 </html>
